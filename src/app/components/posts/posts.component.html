@@ -1,0 +1,5 @@
+<cdk-virtual-scroll-viewport itemSize="50" class="viewport">
+    <div class="comment" *cdkVirtualFor="let comment of allComments | async">
+        {{ comment.body }}
+    </div>
+</cdk-virtual-scroll-viewport>

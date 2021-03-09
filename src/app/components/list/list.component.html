@@ -1,0 +1,5 @@
+<ul class="list-group" cdkDropList (cdkDropListDropped)="onDropped($event)">
+    <li class="list-group-item" *ngFor="let post of posts" cdkDrag>
+        {{ post.title }}
+    </li>
+</ul>
